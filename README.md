@@ -4,7 +4,6 @@ Dependencies
 <a href="http://sourceforge.net/projects/simplevoronoi/">simplevoronoi</a>
 Download simplevoronoi and place simplevoronoi-version-SNAPSHOT.jar in lib directory
 
-
 Create jar file
 
 download Spark multiple jobs Examples 
