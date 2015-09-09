@@ -47,17 +47,17 @@ TWITTER_ACCESS_TOKEN_SECRET=AccessTokenSecret
 </blockquote>
 <p><strong>1.4:</strong> run sbt job to write live stream from twitter in a csv file</p>
 <blockquote>sbt "run-main xulu.FetchTweets twitter-credentials.txt tweets.csv"</blockquote>
-<p>This job write tweets in fomate <Longitude,Latitude,Text> to change modifie FetchTweets.scala and run again</p>
+<p>This job write tweets in fomate ( Longitude,Latitude,Text )<br> to change modifie FetchTweets.scala and run again</p>
 <br>		
 <p>shell output</p>
 <blockquote> 
--56.544541,-29.089541,Por que ni estamos jugando, son más pajeros estos locos! <span class="wp-smiley wp-emoji wp-emoji-neutral" title=":|">:|</span>
--69.922686,18.462675,Aprenda hablar amigo
--118.565107,34.280215,today a boy told me I'm pretty and he loved me. he's six years old so that's good.
-121.039399,14.72272,@Kringgelss labuyoo. Hahaha
--34.875339,-7.158832@keithmeneses_ oi td bem? sdds 😔💚
-103.766123,1.380696,Xian Lim on iShine 3 2
-......
+<p>-56.544541,-29.089541,Por que ni estamos jugando, son más pajeros estos locos!</p>
+<p>-69.922686,18.462675,Aprenda hablar amigo</p>
+<p>-118.565107,34.280215,today a boy told me I'm pretty and he loved me. he's six years old so that's good.</p>
+<p>121.039399,14.72272,@Kringgelss labuyoo. Hahaha</p>
+<p>-34.875339,-7.158832@keithmeneses_ oi td bem? sdds 😔💚</p>
+<p>103.766123,1.380696,Xian Lim on iShine 3 2</p>
+<p>......</p>
 </blockquote>
 
 <h2>spark live Twitter stream</h2>
@@ -73,7 +73,6 @@ TWITTER_ACCESS_TOKEN_SECRET=AccessTokenSecret
 <br>		 
 <h2>Segmenting Audience with KMeans and Voronoi Diagram using Spark and MLlib</h2>
 <p>In this example, we will be using the <a href="http://en.wikipedia.org/wiki/K-means_clustering"k-means clustering</a> algorithm implemented in <a href="https://spark.apache.org/mllib/">Spark Machine Learning Library</a>(MLLib) to segment the dataset by geolocation.</p>
-<br>
 <p><strong>3.1:</strong> we need twitter data to perform this example.</p>
 <p>in example one we show how you write Twitter data in a file so run example one to fetch some data fron Twitter.</p>
 <p>For your convenience, we provide the file tweets_drink.csv</p>
@@ -111,5 +110,5 @@ drink beer rhum liquor gin ouzo brandy mescal alcoholic wine drink"
 <p>On this map, we can clearly see that the word 'coke'(in green) is used much more than the word 'pepsi'(in red) in the tweets. There are some places which are yellow, that means that there are tweets on coke and tweets on pepsi (yellow = red + green). Interestingly enough, we can see that coke is not used much in South America unlike pepsi which is used in Brazil and in Argentina.</p>
 		 
 <h2>Following</h2>
-https://chimpler.wordpress.com/2014/07/11/segmenting-audience-with-kmeans-and-voronoi-diagram-using-spark-and-mllib/
+https://chimpler.wordpress.com/2014/07/11/segmenting-audience-with-kmeans-and-voronoi-diagram-using-spark-and-mllib/ <br>
 https://chimpler.wordpress.com/2014/06/26/analyzing-your-audience-location-with-twitter-streams-and-heat-maps/
