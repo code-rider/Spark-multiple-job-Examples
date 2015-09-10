@@ -62,19 +62,19 @@ TWITTER_ACCESS_TOKEN_SECRET=AccessTokenSecret<br>
 <p>When you have enough tweets, stop the program by pressing CTRL + C</p>
 <h2>spark live Twitter stream</h2>
 
-<p><strong>2.1:</strong> we already create a jar file from our repostory in step one so just run stream class on spark</p>
+<p><strong>2.1:</strong> we already create a jar file from our repository in step one so just run stream class on spark</p>
 <p>cd to spark home</p>
 <blockquote>bin/spark-submit --class xulu.TwitterLiveStreaming --master spark://sparkMasterIP:7077 PathTo/spark_multiple_job_examples_2.10-SNAPSHOT-0.1.jar (Optional kyeWords separated by space)
 </blockquote>
-<br>		 
+
 <p>This example should only print tweet text from Twitter live stream on shell</p> 
 <p>you are able to do write it any where or change the query </p>
 <p>modifie TwitterLiveStreaming.scala and rebluild you jar  and run again</p>
-<br>		 
+
 <h2>Segmenting Audience with KMeans and Voronoi Diagram using Spark and MLlib</h2>
-<p>In this example, we will be using the <a href="http://en.wikipedia.org/wiki/K-means_clustering"k-means clustering</a> algorithm implemented in <a href="https://spark.apache.org/mllib/">Spark Machine Learning Library</a>(MLLib) to segment the dataset by geolocation.</p>
+<p>In this example, we will be using the <a href="http://en.wikipedia.org/wiki/K-means_clustering">k-means clustering</a> algorithm implemented in <a href="https://spark.apache.org/mllib/">Spark Machine Learning Library</a>(MLLib) to segment the dataset by geolocation.</p>
 <p><strong>3.1:</strong> we need twitter data to perform this example.</p>
-<p>in example one we show how you write Twitter data in a file so run example one to fetch some data fron Twitter.</p>
+<p>in example one we show how you write Twitter data in a file so run example one to fetch some data from Twitter.</p>
 <p>For your convenience, we provide the file tweets_drink.csv</p>
 		 
 <p><strong>3.2:</strong> upload Twitter data tweets_drink.csv in to Hadoop</p>
