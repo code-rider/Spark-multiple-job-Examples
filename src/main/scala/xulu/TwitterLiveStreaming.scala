@@ -24,7 +24,7 @@ object TwitterLiveStreaming {
     statuses.print()
     // Your code goes here
     
-    ssc.checkpoint("hdfs://192.168.1.59:9000/checkpoint");
+    ssc.checkpoint("hdfs://HDFS_IP:9000/checkpoint");
     ssc.start()
     ssc.awaitTermination()
   }

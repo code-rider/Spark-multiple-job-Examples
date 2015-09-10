@@ -62,7 +62,14 @@ TWITTER_ACCESS_TOKEN_SECRET=AccessTokenSecret<br>
 <p>When you have enough tweets, stop the program by pressing CTRL + C</p>
 <h2>spark live Twitter stream</h2>
 
-<p><strong>2.1:</strong> we already create a jar file from our repository in step one so just run stream class on spark</p>
+<p><strong>2.1:</strong> 
+Edit file Spark-multiple-job-Examples/src/mian/scala/xulu/TwitterLiveStreaming.scala <br>
+find the line ssc.checkpoint("hdfs://HDFS_IP:9000/checkpoint") at end of file.<br>
+replace  HDFS_IP with Hadoop master IP and rebuild jar file</p>
+<p>cd Spark-multiple-job-Examples and run</p>
+<blockquote>sbt</blockquote>
+<blockquote>> package</blockquote>
+
 <p>cd to spark home</p>
 <blockquote>bin/spark-submit --class xulu.TwitterLiveStreaming --master spark://sparkMasterIP:7077 PathTo/spark_multiple_job_examples_2.10-SNAPSHOT-0.1.jar (Optional kyeWords separated by space)
 </blockquote>
