@@ -10,6 +10,9 @@ import org.apache.spark.streaming.api.java.JavaReceiverInputDStream
 object TwitterLiveStreaming {
   
   def main(args: Array[String]) {
+    if (args.length < 1) {
+      sys.error("Arguments: <credential_file>")
+    }
     
     val TwitterCredentialFilePath = args(0)
     
