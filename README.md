@@ -114,8 +114,12 @@ drink beer rhum liquor gin ouzo brandy mescal alcoholic wine drink"
 <blockquote>bin/spark-submit --class xulu.HeatMap --master spark://SparkMasterIP:7077 PathTo/spark_multiple_job_examples_2.10-SNAPSHOT-0.1.jar hdfs://HDFS_IP:9000/UploadedLocation/tweets_drink.csv results/heatmapApp.png 0.5 coke pepsi	
 </blockquote>
 <h4>result</h4>
-<p><a href="https://raw.githubusercontent.com/code-rider/Spark-multiple-job-Examples/master/results/heatmapApp.png" target="_blank"><img src="https://raw.githubusercontent.com/code-rider/Spark-multiple-job-Examples/master/results/heatmapApp.png" alt="HeatMap App result" /></a></p> 
-<br>		 
+<p>
+  <a href="https://raw.githubusercontent.com/code-rider/Spark-multiple-job-Examples/master/results/heatmapApp.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/code-rider/Spark-multiple-job-Examples/master/results/heatmapApp.png" alt="HeatMap App result" />
+  </a>
+</p> 
+		 
 <p>On this map, we can clearly see that the word 'coke'(in green) is used much more than the word 'pepsi'(in red) in the tweets. There are some places which are yellow, that means that there are tweets on coke and tweets on pepsi (yellow = red + green). Interestingly enough, we can see that coke is not used much in South America unlike pepsi which is used in Brazil and in Argentina.</p>
 		 
 <h2>Following</h2>
