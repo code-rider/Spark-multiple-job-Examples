@@ -1,13 +1,13 @@
-Spark multiple jobs Examples
+Spark multiple job Examples
 ============================
-<p>Download Spark-multiple-jobs-Examples</p> 
+<p>Download Spark-multiple-job-Examples</p> 
 <h2>Dependencies</h2>
 
 <a href="http://sourceforge.net/projects/simplevoronoi/">simplevoronoi</a><br>
 <p>Download simplevoronoi and place simplevoronoi-version-SNAPSHOT.jar in lib directory</p>
 
 <h2>Create jar file</h2>
-<p>cd Spark-multiple-jobs-Examples and run</p>
+<p>cd Spark-multiple-job-Examples and run</p>
 <blockquote>sbt</blockquote>
 <blockquote>> package</blockquote>
 
@@ -23,7 +23,7 @@ now we will run classes from this jar as spark jobs</p>
 <a href="http://sourceforge.net/projects/simplevoronoi/">simplevoronoi</a><br>
 
 <p>Download listed libraries some where on disc</p>
-<p>and add these in SPARK_CLASSPATH in you user user .bashrc file or spark-env.sh file</p>
+<p>and add these in SPARK_CLASSPATH in your user .bashrc file or spark-env.sh file</p>
 <p>in this tutorial we export these in spark-env.sh so add these lines in you SparkHome/conf/spark-env.sh</p>
 <br>
 <blockquote>
@@ -40,26 +40,26 @@ export SPARK_CLASSPATH=PathToFile/simplevoronoi-0.2-SNAPSHOT.jar:$SPARK_CLASSPAT
 <p><strong>1.2:</strong> create a file with Twitter API credentiale like name twitter-credentials.txt</p>
 <p><strong>1.3:</strong> enter credential</p>
 <blockquote>    
-TWITTER_API_KEY=ApiKey
-TWITTER_API_SECRET=ApiSecret
-TWITTER_ACCESS_TOKEN=AccessToken
-TWITTER_ACCESS_TOKEN_SECRET=AccessTokenSecret
+TWITTER_API_KEY=ApiKey<br>
+TWITTER_API_SECRET=ApiSecret<br>
+TWITTER_ACCESS_TOKEN=AccessToken<br>
+TWITTER_ACCESS_TOKEN_SECRET=AccessTokenSecret<br>
 </blockquote>
 <p><strong>1.4:</strong> run sbt job to write live stream from twitter in a csv file</p>
 <blockquote>sbt "run-main xulu.FetchTweets twitter-credentials.txt tweets.csv"</blockquote>
-<p>This job write tweets in fomate ( Longitude,Latitude,Text )<br> to change modifie FetchTweets.scala and run again</p>
-<br>		
+<p>This job write tweets in fomate "Longitude,Latitude,Text "<br>to change modifie FetchTweets.scala and run again</p>
+
 <p>shell output</p>
 <blockquote> 
-<p>-56.544541,-29.089541,Por que ni estamos jugando, son más pajeros estos locos!</p>
+<p>-56.544541,-29.089541,Por que ni estamos jugando,</p>
 <p>-69.922686,18.462675,Aprenda hablar amigo</p>
-<p>-118.565107,34.280215,today a boy told me I'm pretty and he loved me. he's six years old so that's good.</p>
+<p>-118.565107,34.280215,today a boy told me I'm pretty</p>
 <p>121.039399,14.72272,@Kringgelss labuyoo. Hahaha</p>
 <p>-34.875339,-7.158832@keithmeneses_ oi td bem? sdds 😔💚</p>
 <p>103.766123,1.380696,Xian Lim on iShine 3 2</p>
 <p>......</p>
 </blockquote>
-
+<p>When you have enough tweets, stop the program by pressing CTRL + C</p>
 <h2>spark live Twitter stream</h2>
 
 <p><strong>2.1:</strong> we already create a jar file from our repostory in step one so just run stream class on spark</p>
