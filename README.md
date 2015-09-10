@@ -87,7 +87,7 @@ replace  HDFS_IP with Hadoop master IP and rebuild jar file</p>
 <p><strong>3.2:</strong> upload Twitter data tweets_drink.csv in to Hadoop</p>
 
 <p><strong>3.3:</strong> run the job</p>
-<blockquote>bin/spark-submit --class xulu.KMeansApp --master spark://SparkMasterIP:7077 PathTo/spark_multiple_job_examples_2.10-SNAPSHOT-0.1.jar hdfs://HDFS_IP:9000/UploadedLocation/tweets_drink.csv outputFileName.png 
+<blockquote>bin/spark-submit --class xulu.KMeansApp --master spark://SparkMasterIP:7077 PathTo/spark_multiple_job_examples_2.10-SNAPSHOT-0.1.jar hdfs://HDFS_IP:9000/UploadedLocation/tweets_drink.csv results/KmeanApp.png 
 </blockquote>
 <p>result</p>
 
@@ -110,7 +110,7 @@ drink beer rhum liquor gin ouzo brandy mescal alcoholic wine drink"
 
 <p><strong>4.2:</strong> upload Twitter data tweets_drink.csv in to Hadoop</p>
 <p><strong>4.3:</strong> run the job</p>
-<blockquote>bin/spark-submit --class xulu.HeatMap --master spark://SparkMasterIP:7077 PathTo/spark_multiple_job_examples_2.10-SNAPSHOT-0.1.jar hdfs://HDFS_IP:9000/UploadedLocation/tweets_drink.csv outputFileName.png 0.5 coke pepsi	
+<blockquote>bin/spark-submit --class xulu.HeatMap --master spark://SparkMasterIP:7077 PathTo/spark_multiple_job_examples_2.10-SNAPSHOT-0.1.jar hdfs://HDFS_IP:9000/UploadedLocation/tweets_drink.csv results/heatmapApp.png 0.5 coke pepsi	
 </blockquote>
 <p>result</p> 
 <br>		 
